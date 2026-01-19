@@ -209,8 +209,7 @@ export class MinecraftBot extends EventEmitter {
           uuid: '',
           request_id: ''
         },
-        internal: false,
-        version: 52
+        internal: false
       });
       console.log(`[MC Command] /${command}`);
     } catch (error) {
