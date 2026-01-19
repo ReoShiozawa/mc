@@ -7,3 +7,7 @@ services:
       - .env
     volumes:
       - ./logs:/app/logs
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
+    network_mode: bridge
