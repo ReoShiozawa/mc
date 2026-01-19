@@ -1,0 +1,9 @@
+services:
+  mcbot:
+    build: .
+    container_name: minecraft-discord-bot
+    restart: unless-stopped
+    env_file:
+      - .env
+    volumes:
+      - ./logs:/app/logs
